@@ -1,0 +1,854 @@
+EESchema Schematic File Version 2
+LIBS:Arduino_As_Uno-cache
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:Altera
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:battery_management
+LIBS:bbd
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:cmos4000
+LIBS:condensador
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:intel
+LIBS:interface
+LIBS:ir
+LIBS:Lattice
+LIBS:linear
+LIBS:logo
+LIBS:maxim
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:power
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:Varios_mios
+LIBS:video
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:xilinx
+LIBS:Zilog
+LIBS:esquema placa_arduino-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Bomba Airsoft"
+Date "23 jun 2016"
+Rev "v1.0"
+Comp "Técnico Superior Mantenimiento electrónico"
+Comment1 "Plano bomba airsoft"
+Comment2 "Oscar Fernández Rodríguez"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONECTOR-XH-2P U2
+U 1 1 57629AA7
+P 2250 6550
+F 0 "U2" H 2060 6350 60  0000 C CNN
+F 1 "INTERRRUPTOR" H 2250 6700 60  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-02_02x2.54mm_Straight" H 2600 6800 60  0001 C CNN
+F 3 "" H 2600 6800 60  0000 C CNN
+	1    2250 6550
+	-1   0    0    1   
+$EndComp
+$Comp
+L R-RESCUE-esquema_placa_arduino R1
+U 1 1 576813C3
+P 4950 6300
+F 0 "R1" V 5030 6300 40  0000 C CNN
+F 1 "10K" V 4957 6301 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4880 6300 30  0001 C CNN
+F 3 "~" H 4950 6300 30  0000 C CNN
+	1    4950 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-esquema_placa_arduino R2
+U 1 1 576813D2
+P 5050 6300
+F 0 "R2" V 5130 6300 40  0000 C CNN
+F 1 "10K" V 5057 6301 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4980 6300 30  0001 C CNN
+F 3 "~" H 5050 6300 30  0000 C CNN
+	1    5050 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-esquema_placa_arduino R3
+U 1 1 576813E1
+P 5150 6300
+F 0 "R3" V 5230 6300 40  0000 C CNN
+F 1 "10K" V 5157 6301 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 5080 6300 30  0001 C CNN
+F 3 "~" H 5150 6300 30  0000 C CNN
+	1    5150 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-esquema_placa_arduino R4
+U 1 1 576813F0
+P 5250 6300
+F 0 "R4" V 5330 6300 40  0000 C CNN
+F 1 "10K" V 5257 6301 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 5180 6300 30  0001 C CNN
+F 3 "~" H 5250 6300 30  0000 C CNN
+	1    5250 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MODULO_FM_PT2272-M4 U9
+U 1 1 576815C5
+P 5800 5450
+F 0 "U9" H 4500 5350 60  0000 C CNN
+F 1 "MODULO_FM_PT2272-M4" H 5400 6200 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x07" H 6000 5700 60  0001 C CNN
+F 3 "~" H 6000 5700 60  0000 C CNN
+	1    5800 5450
+	0    1    1    0   
+$EndComp
+NoConn ~ 5350 5150
+$Comp
+L GND-RESCUE-esquema_placa_arduino #PWR01
+U 1 1 57681981
+P 5350 5850
+F 0 "#PWR01" H 5350 5850 30  0001 C CNN
+F 1 "GND" H 5350 5780 30  0001 C CNN
+F 2 "" H 5350 5850 60  0000 C CNN
+F 3 "" H 5350 5850 60  0000 C CNN
+	1    5350 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONECTOR-XH-2P U18
+U 1 1 57681AAF
+P 8500 2100
+F 0 "U18" H 8650 1900 60  0000 C CNN
+F 1 "PULSADOR ROJO" V 8250 2050 60  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-02_02x2.54mm_Straight" H 8850 2350 60  0001 C CNN
+F 3 "~" H 8850 2350 60  0000 C CNN
+	1    8500 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L CONECTOR-XH-2P U13
+U 1 1 57681ADC
+P 7300 2100
+F 0 "U13" H 7110 1900 60  0000 C CNN
+F 1 "PULSADOR VERDE" V 7550 2000 60  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-02_02x2.54mm_Straight" H 7650 2350 60  0001 C CNN
+F 3 "~" H 7650 2350 60  0000 C CNN
+	1    7300 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONECTOR-XH-4P U3
+U 1 1 576824D8
+P 6650 2450
+F 0 "U3" H 6350 2250 60  0000 C CNN
+F 1 "LED RGB" H 6700 2650 60  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-04_04x2.54mm_Straight" H 7000 2700 60  0001 C CNN
+F 3 "~" H 7000 2700 60  0000 C CNN
+	1    6650 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L CONECTOR-XH-2P U8
+U 1 1 57682505
+P 5950 3700
+F 0 "U8" H 6100 3500 60  0000 C CNN
+F 1 "LED VERDE" H 6000 3850 60  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-02_02x2.54mm_Straight" H 6300 3950 60  0001 C CNN
+F 3 "~" H 6300 3950 60  0000 C CNN
+	1    5950 3700
+	1    0    0    1   
+$EndComp
+$Comp
+L CONECTOR-XH-2P U10
+U 1 1 57682514
+P 5350 3350
+F 0 "U10" H 5160 3150 60  0000 C CNN
+F 1 "LED ROJO" H 5400 3500 60  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-02_02x2.54mm_Straight" H 5700 3600 60  0001 C CNN
+F 3 "~" H 5700 3600 60  0000 C CNN
+	1    5350 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONECTOR-XH-2P U6
+U 1 1 57682523
+P 4850 1950
+F 0 "U6" H 4660 1750 60  0000 C CNN
+F 1 "MOTOR" H 4850 2100 60  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-02_02x2.54mm_Straight" H 5200 2200 60  0001 C CNN
+F 3 "~" H 5200 2200 60  0000 C CNN
+	1    4850 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L NPN Q1
+U 1 1 57682532
+P 6350 1750
+F 0 "Q1" H 6350 1600 50  0000 R CNN
+F 1 "NPN" H 6350 1900 50  0000 R CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 6350 1750 60  0001 C CNN
+F 3 "~" H 6350 1750 60  0000 C CNN
+	1    6350 1750
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND-RESCUE-esquema_placa_arduino #PWR02
+U 1 1 57683057
+P 6300 3450
+F 0 "#PWR02" H 6300 3450 30  0001 C CNN
+F 1 "GND" H 6300 3380 30  0001 C CNN
+F 2 "" H 6300 3450 60  0000 C CNN
+F 3 "" H 6300 3450 60  0000 C CNN
+	1    6300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esquema_placa_arduino #PWR03
+U 1 1 57683066
+P 6650 1950
+F 0 "#PWR03" H 6650 1950 30  0001 C CNN
+F 1 "GND" H 6650 1880 30  0001 C CNN
+F 2 "" H 6650 1950 60  0000 C CNN
+F 3 "" H 6650 1950 60  0000 C CNN
+	1    6650 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONECTOR-XH-2P U11
+U 1 1 57683A9F
+P 3950 1950
+F 0 "U11" H 3760 1750 60  0000 C CNN
+F 1 "SONIDO" H 4000 2150 60  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-02_02x2.54mm_Straight" H 4300 2200 60  0001 C CNN
+F 3 "~" H 4300 2200 60  0000 C CNN
+	1    3950 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L PANTALLA_LCD_I2C U5
+U 1 1 57683F73
+P 2500 2800
+F 0 "U5" H 2200 2600 60  0000 C CNN
+F 1 "PANTALLA_I2C" H 2550 3000 60  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-04_04x2.54mm_Straight" H 2850 3050 60  0001 C CNN
+F 3 "~" H 2850 3050 60  0000 C CNN
+	1    2500 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BLUETOOTH_HC-06 U19
+U 1 1 576845BB
+P 10000 1750
+F 0 "U19" H 9700 1550 60  0000 C CNN
+F 1 "BLUETOOTH_HC-06" H 10000 1900 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 10350 2000 60  0001 C CNN
+F 3 "~" H 10350 2000 60  0000 C CNN
+	1    10000 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L CONECTOR-XH-8P U15
+U 1 1 57693D10
+P 8050 2900
+F 0 "U15" H 7650 2850 60  0000 C CNN
+F 1 "TECLADO1" H 8100 3100 60  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-08_08x2.54mm_Straight" H 8400 3150 60  0001 C CNN
+F 3 "~" H 8400 3150 60  0000 C CNN
+	1    8050 2900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esquema_placa_arduino #PWR04
+U 1 1 5769875F
+P 9250 1950
+F 0 "#PWR04" H 9250 1950 30  0001 C CNN
+F 1 "GND" H 9250 1880 30  0001 C CNN
+F 2 "" H 9250 1950 60  0000 C CNN
+F 3 "" H 9250 1950 60  0000 C CNN
+	1    9250 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esquema_placa_arduino #PWR05
+U 1 1 576AB14C
+P 3700 1550
+F 0 "#PWR05" H 3700 1550 30  0001 C CNN
+F 1 "GND" H 3700 1480 30  0001 C CNN
+F 2 "" H 3700 1550 60  0000 C CNN
+F 3 "" H 3700 1550 60  0000 C CNN
+	1    3700 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D2
+U 1 1 57682550
+P 4850 2600
+F 0 "D2" H 4850 2700 40  0000 C CNN
+F 1 "DIODE" H 4850 2500 40  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 4850 2600 60  0001 C CNN
+F 3 "~" H 4850 2600 60  0000 C CNN
+	1    4850 2600
+	1    0    0    1   
+$EndComp
+$Comp
+L R-RESCUE-esquema_placa_arduino R5
+U 1 1 5809E237
+P 5400 2400
+F 0 "R5" V 5480 2400 40  0000 C CNN
+F 1 "470" V 5407 2401 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 5330 2400 30  0001 C CNN
+F 3 "~" H 5400 2400 30  0000 C CNN
+	1    5400 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L R-RESCUE-esquema_placa_arduino R6
+U 1 1 5809EDC0
+P 5900 2300
+F 0 "R6" V 5980 2300 40  0000 C CNN
+F 1 "470" V 5907 2301 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 5830 2300 30  0001 C CNN
+F 3 "~" H 5900 2300 30  0000 C CNN
+	1    5900 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-RESCUE-esquema_placa_arduino R7
+U 1 1 580A0CC7
+P 5900 2400
+F 0 "R7" V 5980 2400 40  0000 C CNN
+F 1 "470" V 5907 2401 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 5830 2400 30  0001 C CNN
+F 3 "~" H 5900 2400 30  0000 C CNN
+	1    5900 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-RESCUE-esquema_placa_arduino R8
+U 1 1 580A6772
+P 5900 2950
+F 0 "R8" V 5980 2950 40  0000 C CNN
+F 1 "470" V 5907 2951 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 5830 2950 30  0001 C CNN
+F 3 "~" H 5900 2950 30  0000 C CNN
+	1    5900 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-esquema_placa_arduino R9
+U 1 1 5810CBE7
+P 6700 1550
+F 0 "R9" V 6780 1550 40  0000 C CNN
+F 1 "1k" V 6707 1551 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6630 1550 30  0001 C CNN
+F 3 "~" H 6700 1550 30  0000 C CNN
+	1    6700 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X06 U7
+U 1 1 58109F7D
+P 5200 6950
+F 0 "U7" H 5200 7300 50  0000 C CNN
+F 1 "CONECTOR_ARDUINO-A0-A5" V 5300 6950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 5200 6950 50  0001 C CNN
+F 3 "" H 5200 6950 50  0000 C CNN
+	1    5200 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X08 U4
+U 1 1 5810A43A
+P 3500 6950
+F 0 "U4" H 3500 7400 50  0000 C CNN
+F 1 "CONECTOR_ARDUINO-IOREF-VIN" V 3600 6950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 3500 6950 50  0001 C CNN
+F 3 "" H 3500 6950 50  0000 C CNN
+	1    3500 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X10 U12
+U 1 1 5810A6D5
+P 6900 950
+F 0 "U12" H 6900 1500 50  0000 C CNN
+F 1 "CONECTOR_ARDUINO-SCL-8" V 7000 950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10" H 6900 950 50  0001 C CNN
+F 3 "" H 6900 950 50  0000 C CNN
+	1    6900 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X08 U16
+U 1 1 5810A758
+P 8400 950
+F 0 "U16" H 8400 1400 50  0000 C CNN
+F 1 "CONECTOR_ARDUINO-7-0_RX" V 8500 950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 8400 950 50  0001 C CNN
+F 3 "" H 8400 950 50  0000 C CNN
+	1    8400 950 
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 6650 1150
+NoConn ~ 6750 1150
+NoConn ~ 6950 1150
+Wire Wire Line
+	2300 6100 3750 6100
+Wire Wire Line
+	3750 3900 3750 6550
+Wire Wire Line
+	4950 6550 4950 6750
+Wire Wire Line
+	5050 6550 5050 6750
+Wire Wire Line
+	5150 6550 5150 6750
+Wire Wire Line
+	5250 6550 5250 6750
+Wire Wire Line
+	5350 5850 5350 5750
+Wire Wire Line
+	7750 2050 8050 2050
+Wire Wire Line
+	7850 2150 8050 2150
+Wire Wire Line
+	7750 2150 7750 2650
+Wire Wire Line
+	7750 2650 7500 2650
+Wire Wire Line
+	7500 2650 7500 3650
+Wire Wire Line
+	7500 3650 7850 3650
+Wire Wire Line
+	7900 2050 7900 1650
+Wire Wire Line
+	7900 1650 8850 1650
+Wire Wire Line
+	8850 1650 8850 3650
+Wire Wire Line
+	8850 3650 8350 3650
+Connection ~ 7900 2050
+Wire Wire Line
+	8550 1150 8550 1650
+Connection ~ 8550 1650
+Wire Wire Line
+	8250 3700 8900 3700
+Wire Wire Line
+	8900 3700 8900 1600
+Wire Wire Line
+	8900 1600 8450 1600
+Wire Wire Line
+	8450 1600 8450 1150
+Wire Wire Line
+	8150 3750 8950 3750
+Wire Wire Line
+	8950 3750 8950 1550
+Wire Wire Line
+	8950 1550 8350 1550
+Wire Wire Line
+	8350 1550 8350 1150
+Wire Wire Line
+	8050 3800 9000 3800
+Wire Wire Line
+	9000 3800 9000 1500
+Wire Wire Line
+	9000 1500 8250 1500
+Wire Wire Line
+	8250 1500 8250 1150
+Wire Wire Line
+	8150 1150 8150 1500
+Wire Wire Line
+	8150 1500 7850 1500
+Wire Wire Line
+	7850 1500 7850 2150
+Connection ~ 7900 2150
+Wire Wire Line
+	8050 1250 7800 1250
+Wire Wire Line
+	7800 1250 7800 2300
+Wire Wire Line
+	7800 2300 7750 2300
+Connection ~ 7750 2300
+Wire Wire Line
+	6950 3750 7750 3750
+Wire Wire Line
+	6950 3750 6950 1650
+Wire Wire Line
+	6950 1650 7350 1650
+Wire Wire Line
+	6200 2500 6200 2600
+Wire Wire Line
+	7350 1650 7350 1150
+Wire Wire Line
+	2950 2950 2950 6100
+Connection ~ 2950 6100
+Wire Wire Line
+	2950 2850 3550 2850
+Wire Wire Line
+	6450 1250 2950 1250
+Wire Wire Line
+	2950 1250 2950 2650
+Wire Wire Line
+	8650 1150 8650 1400
+Wire Wire Line
+	9550 4050 9550 1900
+Wire Wire Line
+	3550 2850 3550 6750
+Wire Wire Line
+	9250 1800 9550 1800
+Connection ~ 3750 6100
+Wire Wire Line
+	3550 4050 9550 4050
+Connection ~ 3550 4050
+Wire Wire Line
+	3750 3900 9400 3900
+Wire Wire Line
+	9400 3900 9400 1800
+Wire Wire Line
+	8650 1400 9400 1400
+Wire Wire Line
+	9400 1400 9400 1700
+Wire Wire Line
+	9400 1700 9550 1700
+Wire Wire Line
+	9550 1600 9500 1600
+Wire Wire Line
+	9500 1600 9500 1250
+Wire Wire Line
+	9500 1250 8750 1250
+Wire Wire Line
+	7250 1150 7250 1700
+Wire Wire Line
+	7250 1700 7000 1700
+Wire Wire Line
+	7000 1700 7000 3700
+Wire Wire Line
+	7000 3700 7650 3700
+Wire Wire Line
+	8350 3650 8350 3250
+Wire Wire Line
+	8250 3700 8250 3250
+Wire Wire Line
+	8150 3750 8150 3250
+Wire Wire Line
+	8050 3800 8050 3250
+Wire Wire Line
+	7650 3700 7650 3250
+Wire Wire Line
+	7750 3750 7750 3250
+Wire Wire Line
+	7850 3650 7850 3250
+Wire Wire Line
+	7900 2150 7900 3500
+Wire Wire Line
+	7900 3500 7950 3500
+Wire Wire Line
+	7950 3500 7950 3250
+Wire Wire Line
+	5250 6050 5250 5250
+Wire Wire Line
+	5250 5250 5350 5250
+Wire Wire Line
+	5150 6050 5150 5350
+Wire Wire Line
+	5150 5350 5350 5350
+Wire Wire Line
+	5050 6050 5050 5450
+Wire Wire Line
+	5050 5450 5350 5450
+Wire Wire Line
+	4950 6050 4950 5550
+Wire Wire Line
+	4950 5550 5350 5550
+Wire Wire Line
+	9250 1800 9250 1950
+Connection ~ 9400 1800
+Wire Wire Line
+	3150 2750 2950 2750
+Wire Wire Line
+	3150 1350 3150 2750
+Wire Wire Line
+	6550 1150 6550 1350
+Wire Wire Line
+	6550 1350 3150 1350
+Wire Wire Line
+	4550 3650 3050 3650
+Wire Wire Line
+	3050 3650 3050 5700
+Wire Wire Line
+	6150 2300 6200 2300
+Wire Wire Line
+	4900 2400 5050 2400
+Wire Wire Line
+	5400 2650 5400 2900
+Wire Wire Line
+	4550 2900 5300 2900
+Wire Wire Line
+	4550 2400 4550 3650
+Connection ~ 4550 2900
+Wire Wire Line
+	5400 2150 5400 1850
+Wire Wire Line
+	5050 1850 6150 1850
+Connection ~ 5400 1850
+Wire Wire Line
+	5650 2300 5650 1850
+Connection ~ 5650 1850
+Wire Wire Line
+	5550 2400 5650 2400
+Wire Wire Line
+	5550 1450 5550 2700
+Wire Wire Line
+	7150 1450 5550 1450
+Wire Wire Line
+	7150 1150 7150 1450
+Wire Wire Line
+	4800 2400 4550 2400
+Wire Wire Line
+	6300 3250 6300 3450
+Wire Wire Line
+	5550 2700 5900 2700
+Connection ~ 5550 2400
+Wire Wire Line
+	5900 3200 5900 3250
+Wire Wire Line
+	6000 3250 6300 3250
+Wire Wire Line
+	6200 2600 5150 2600
+Wire Wire Line
+	5150 2600 5150 2900
+Connection ~ 5150 2900
+Wire Wire Line
+	6150 2400 6200 2400
+Wire Wire Line
+	7050 1150 7050 1550
+Wire Wire Line
+	3900 1500 3700 1500
+Wire Wire Line
+	3700 1500 3700 1550
+Wire Wire Line
+	6850 1150 6850 1500
+Wire Wire Line
+	6850 1500 4000 1500
+Wire Wire Line
+	6550 1850 6650 1850
+Wire Wire Line
+	6650 1850 6650 1950
+Wire Wire Line
+	3850 6000 3850 6750
+Wire Wire Line
+	5350 5650 3550 5650
+Connection ~ 3550 5650
+Wire Wire Line
+	2250 6000 3850 6000
+Wire Wire Line
+	6350 1550 6450 1550
+Wire Wire Line
+	7050 1550 6950 1550
+Wire Wire Line
+	5050 1850 5050 2600
+Connection ~ 5050 2400
+Wire Wire Line
+	4650 2600 4550 2600
+Connection ~ 4550 2600
+Wire Wire Line
+	6450 1250 6450 1150
+Wire Wire Line
+	8050 1150 8050 1250
+Wire Wire Line
+	8750 1250 8750 1150
+NoConn ~ 3450 6750
+NoConn ~ 3350 6750
+NoConn ~ 3250 6750
+NoConn ~ 3150 6750
+Wire Wire Line
+	3750 6550 3650 6550
+Wire Wire Line
+	3650 6550 3650 6750
+NoConn ~ 3750 6750
+Wire Wire Line
+	3050 5700 2250 5700
+Connection ~ 2250 5700
+NoConn ~ 5350 6750
+NoConn ~ 5450 6750
+$Comp
+L DIODE D1
+U 1 1 5811529F
+P 1400 5750
+F 0 "D1" H 1400 5850 40  0000 C CNN
+F 1 "DIODE" H 1400 5650 40  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 1400 5750 60  0001 C CNN
+F 3 "~" H 1400 5750 60  0000 C CNN
+	1    1400 5750
+	0    -1   1    0   
+$EndComp
+$Comp
+L CONECTOR-XH-2P U1
+U 1 1 5811656A
+P 1450 6800
+F 0 "U1" H 1260 6600 60  0000 C CNN
+F 1 "+         -" H 1450 6950 60  0000 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 1800 7050 60  0001 C CNN
+F 3 "" H 1800 7050 60  0000 C CNN
+	1    1450 6800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 5950 1400 6350
+$Comp
+L LM7805CT U17
+U 1 1 58117040
+P 1800 4800
+F 0 "U17" H 1600 5000 50  0000 C CNN
+F 1 "LM7805CT" H 1800 5000 50  0000 L CNN
+F 2 "Power_Integrations:TO-220" H 1800 4900 50  0000 C CIN
+F 3 "" H 1800 4800 50  0000 C CNN
+	1    1800 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4750 2250 4750
+Wire Wire Line
+	2250 4750 2250 6000
+$Comp
+L C C2
+U 1 1 581183A1
+P 2050 5350
+F 0 "C2" H 2075 5450 50  0000 L CNN
+F 1 "100nF" H 2075 5250 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 2088 5200 50  0001 C CNN
+F 3 "" H 2050 5350 50  0000 C CNN
+	1    2050 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C1
+U 1 1 58118454
+P 1600 5350
+F 0 "C1" H 1625 5450 50  0000 L CNN
+F 1 "100nF" H 1625 5250 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 1638 5200 50  0001 C CNN
+F 3 "" H 1600 5350 50  0000 C CNN
+	1    1600 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 58118C9E
+P 650 5950
+F 0 "#FLG06" H 650 6045 50  0001 C CNN
+F 1 "PWR_FLAG" H 650 6130 50  0000 C CNN
+F 2 "" H 650 5950 50  0000 C CNN
+F 3 "" H 650 5950 50  0000 C CNN
+	1    650  5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR07
+U 1 1 58118CF4
+P 900 5950
+F 0 "#PWR07" H 900 5800 50  0001 C CNN
+F 1 "VCC" H 900 6100 50  0000 C CNN
+F 2 "" H 900 5950 50  0000 C CNN
+F 3 "" H 900 5950 50  0000 C CNN
+	1    900  5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  5950 900  5950
+Wire Wire Line
+	900  5950 900  6250
+Wire Wire Line
+	900  6250 1400 6250
+Connection ~ 1400 6250
+Wire Wire Line
+	1500 6100 1500 6350
+Wire Wire Line
+	1500 6100 2200 6100
+Wire Wire Line
+	2250 5350 2200 5350
+Connection ~ 2250 5350
+Wire Wire Line
+	1400 4750 1400 5550
+Wire Wire Line
+	1450 5350 1400 5350
+Connection ~ 1400 5350
+Wire Wire Line
+	1750 5350 1900 5350
+Wire Wire Line
+	1800 5050 1800 6250
+Connection ~ 1800 5350
+Connection ~ 1800 6100
+$Comp
+L GND #PWR08
+U 1 1 58119A9C
+P 1800 6250
+F 0 "#PWR08" H 1800 6000 50  0001 C CNN
+F 1 "GND" H 1800 6100 50  0000 C CNN
+F 2 "" H 1800 6250 50  0000 C CNN
+F 3 "" H 1800 6250 50  0000 C CNN
+	1    1800 6250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,1 @@
+Esto se abre con kicad, un programa de uso libre, en el encontraremos el esquema electrónico, podremos modificarlo y mejorarlo.

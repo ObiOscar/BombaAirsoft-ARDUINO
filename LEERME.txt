@@ -1,0 +1,5 @@
+Bienvenido, me alegro que te interese este proyecto.
+-En la carpeta code, estará el código en lenguaje Arduino.
+-En la carpeta libraries, son las librerias necesarios para usar el programa, si se me ha olvidado alguna, recordarmelo
+-Modulo-fm es un añadido al programa, usando el mando fm para activar y desactivar la bomba
+-PLACA_AIRSOFT tendremos los fotolitos y el archivo en formado kikad para poder modificarlo
