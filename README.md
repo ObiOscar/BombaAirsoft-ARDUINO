@@ -20,5 +20,5 @@ En el siguiente vídeo podremos ver un poco como funciona... Cualquier problema 
 
 ## Licencia
 
-![](https://github.com/Obijuan/3D-parts/raw/master/wiki/attribution-share-alike-creative-commons-license.png)  
+![](https://github.com/ObiOscar/BombaAirsoft/blob/master/licencia.png)  
 [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)
